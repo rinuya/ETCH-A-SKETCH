@@ -1,4 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
 div{
-    border:2px solid black;
-    padding:1px;
+}
+
+.black{
+    background-color: black;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    
+}
+
+#row{
+    display: flex;
+    flex:auto;
+    flex-direction: row;
+}
+
+#square{
+    
+    border:1px solid gray;
+    padding:3px;
 }
