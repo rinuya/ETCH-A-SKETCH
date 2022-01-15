@@ -1,5 +1,5 @@
 const main = document.querySelector(".main");
-
+const btn = document.querySelector("#clear");
 // const row = document.createElement("div");
 // main.appendChild(row);
 // const square = document.createElement("div");
@@ -8,7 +8,24 @@ const main = document.querySelector(".main");
 // row.setAttribute("class", "row");
 // square.setAttribute("class", "square");
 
-const i = 100;
+
+//   IISSSSUUEEESS HEEERREEE
+btn.onclick = () => {
+    let remove = document.querySelectorAll(".black")
+    if (remove>0){
+    remove.classList.remove("black");
+    console.log(remove)
+    let size = prompt("How big do you want your drawing board to be? Max size is 100!");
+    if (size<=100 && size>0){
+        generate(size);
+    }
+    else{
+        alert("Error, please try again with a full Number");
+    }
+}
+}
+
+const i = 32;
 
 function generate (squareRowsAndColumns) {
     for (let y=0; y<=squareRowsAndColumns; y++) {
